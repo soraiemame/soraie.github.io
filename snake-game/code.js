@@ -28,7 +28,7 @@ class snake{
     put(this.x,this.y,color[0]);
   }
   show(){
-    put(this.px,this.py,color[1]);
+    can.fillStyle = color[1];can.fillRect(this.px,this.py,B,B);
     for(let i = 0;i < this.tl;i++){
       put(this.tx[i],this.ty[i],color[0]);
     }
