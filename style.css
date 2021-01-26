@@ -13,7 +13,7 @@ header{
     height: 50px;
 }
 div.main{
-    margin: 0px 40px 150px 40px;
+    margin: -10px 40px 150px 40px;
     position: relative;
     top: 60px;
     /*text-align: center;*/
@@ -29,7 +29,8 @@ body{
     border-left: solid 5px #ffaf58;
 }
 .content{
-    margin: 0px 100px 60px 100px;
+    width: 700px;
+    margin: 0px 300px 60px 100px;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 0px;
@@ -51,4 +52,18 @@ a{
 }
 a:hover{
     color: tomato;
+}
+summary{
+    margin-left: 10px;
+}
+summary:hover{
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+}
+.details{
+    list-style: none;
+    margin-left: -20px;
+}
+.table{
+    float: right;
 }
