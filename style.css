@@ -1,10 +1,11 @@
+/*
+header
+*/
+
 header{
     background-color: #27d1cb;
-    
-    /*padding-bottom: 10px;*/
     padding-top: 10px;
     padding-left: 5px;
-    /*padding: 5px;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -12,38 +13,57 @@ header{
     z-index: 20;
     height: 50px;
 }
+
+/*
+背景
+*/
+
 div.main{
-    margin: -10px 40px 150px 40px;
+    width: 1400px;
+    min-width: 1000px;
+    margin: -10px 20px 150px 40px;
     position: relative;
     top: 60px;
-    /*text-align: center;*/
     background-color: white;
+}
+div.main:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 body{
     background-color: rgb(212, 212, 212);
 }
-.begin{
+
+/*
+左の要素
+*/
+
+.content .begin{
     padding: 0.5em;
     color: #494949;
     background: #fffaf4;
     border-left: solid 5px #ffaf58;
 }
 .content{
-    width: 700px;
-    margin: 0px 300px 60px 100px;
+    width: 800px;
+    margin: 0px 0px 60px 100px;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 0px;
     padding-right: 0px;
+    float: left;
 }
-.block{
+.content .block{
     background-color: #f0f0f0;
     font-size: larger;
     line-height: normal;
     margin-top: 20px;
     padding-bottom: 5px;
 }
-.block p{
+.content .block p{
     margin-left: 20px;
 }
 a{
@@ -64,6 +84,37 @@ summary:hover{
     list-style: none;
     margin-left: -20px;
 }
-.table{
-    float: right;
+
+/*
+右側の要素
+*/
+
+.content-right{
+    text-align: center;
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    float: left;
+    background-color: rgb(252, 250, 250);
+    border: gray 1px;
+    overflow: scroll;
+}
+.content-right .block{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #f0f0f0;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+.content-right .begin{
+    padding: 5px;
+    background-color: rgb(200, 233, 135);
+    padding: 0.5em;
+    color: #494949;
+    background: #e6e6fd;
+    border-left: solid 5px rgb(97, 97, 247);
+}
+div{
+    display: block;
 }
